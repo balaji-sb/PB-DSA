@@ -192,12 +192,12 @@ public class PBLinkedList<T> {
     }
 
     public void removeElement(T t) {
-
-        // To check if it is head
         if (size == 0) {
             System.out.println("List is empty");
             return;
         }
+
+        // To check if it is head
         if (head.data == t) {
             System.out.println("Delete head value -> done" + head.data);
             head = head.next;
